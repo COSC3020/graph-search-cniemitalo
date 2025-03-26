@@ -13,7 +13,7 @@ let classGraph = [
   []
 ];
 
-assert(JSON.stringify(depthFirstSearch(classGraph,0,3)) == JSON.stringify([0,2,3]));
+jsc.assert(JSON.stringify(depthFirstSearch(classGraph,0,3)) == JSON.stringify([0,2,3]));
 
 /*
 function convertListToMatrix(edges, maxNode) {
