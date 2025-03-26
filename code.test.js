@@ -3,6 +3,19 @@ const jsc = require('jsverify');
 
 eval(fs.readFileSync('code.js')+''); 
 
+let classGraph = [
+  [1,2,5],
+  [4],
+  [3,5],
+  [4],
+  [],
+  [6],
+  []
+];
+
+assert(JSON.stringify(depthFirstSearch(classGraph,0,3)) == JSON.stringify([0,2,3]));
+
+/*
 function convertListToMatrix(edges, maxNode) {
     const mat = []; 
     for (let i = 0; i <= maxNode; i++) {
@@ -29,3 +42,4 @@ const test = jsc.forall("array (pair nat nat)", function(edges) {
 })
 
 jsc.assert(test, { tests: 1000 }); 
+*/
