@@ -3,9 +3,9 @@ function depthFirstSearch(graph, startNode, targetNode) {
     let visited = []; 
     let path = []; 
 
-    //if node is in the graph, return the path
+    //if the graph is not empty and the node is in the graph, return the path
     //else return empty array 
-    if (search(graph, startNode, targetNode, visited, path)) {
+    if ((graph.length !== 0) && (search(graph, startNode, targetNode, visited, path))) {
         return path; 
     } else {
         return []; 
@@ -38,5 +38,4 @@ function search(graph, current, target, visited, path) {
     path.pop(); 
     return false;  
 }
-
 
