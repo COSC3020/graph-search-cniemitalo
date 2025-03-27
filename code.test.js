@@ -25,5 +25,5 @@ jsc.assert(JSON.stringify(depthFirstSearch(graph3, 1, 0)) == JSON.stringify([]))
 jsc.assert(JSON.stringify(depthFirstSearch(graph4, 0, 2)) == JSON.stringify([0, 1, 2])); 
 jsc.assert(JSON.stringify(depthFirstSearch(graph4, 3, 2)) == JSON.stringify([])); 
 jsc.assert(JSON.stringify(depthFirstSearch(graph5, 0, 0)) == JSON.stringify([0])); 
-jsc.assert(JSON.stringify(depthFirstSearch(graph6, 0, 6)) == JSON.stringify([0, 1, 4, 6]); 
+jsc.assert(JSON.stringify(depthFirstSearch(graph6, 0, 6)) == JSON.stringify([0, 1, 4, 6])); 
 jsc.assert(JSON.stringify(depthFirstSearch(graph6, 5, 3)) == JSON.stringify([])); 
