@@ -15,7 +15,7 @@ let graph6 = [[1, 2, 3], [4], [4, 5], [5], [6], [6], []];
 
 
 //assert(JSON.stringify(depthFirstSearch(emptyGraph, 0, 0)) == JSON.stringify([]));
-//assert(JSON.stringify(depthFirstSearch(emptyGraph, 3, 7)) == JSON.stringify([]))
+//assert(JSON.stringify(depthFirstSearch(emptyGraph, 3, 7)) == JSON.stringify([]));
 assert(JSON.stringify(depthFirstSearch(graph1, 0, 3)) == JSON.stringify([0, 1, 3])); 
 assert(JSON.stringify(depthFirstSearch(graph1, 1, 2)) == JSON.stringify([])); 
 assert(JSON.stringify(depthFirstSearch(graph2, 0, 3)) == JSON.stringify([0, 1, 2, 3])); 
