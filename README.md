@@ -26,6 +26,19 @@ the function and run automatically when you commit through a GitHub action.
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
+The worst-case scenario for depthFirstSearch would be if the targetNode did not exist within the graph, or was the last node the program could possibly check. In both of these cases, the program has to iterate through every other possible combination, and exhaustively search through the nodes and their edges, backtracking when required. This would put the worst-case at iterating through every edge, for every node, |V| * |E|. Thus, the runtime complexity would be $\Theta(|V| * |E|)$. 
+
+
+### Sources and Plagiarism 
+
+Sources: 
+
+https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+
+I based my testing code off of Ishita Patel's, as well as a few of the unit tests we briefly discussed in class. 
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
 ## Bonus
 
 Implement and analyze breadth-first search.
